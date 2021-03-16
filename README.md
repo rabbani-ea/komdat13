@@ -8,7 +8,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 
 ## Instalasi (amin Mufti)
 
-#### Prasyarat, apa saja yang harus diinstal sebelumnya
+### Prasyarat, apa saja yang harus diinstal sebelumnya
   - Apache <br>
     `sudo apt install apache2`
   - PHP >= 5.5.9 <br>
@@ -33,8 +33,8 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
     - PHP curl extension <br>
       `sudo apt isntall php-curl`
 
-#### Langkah instalasi dalam CLI (Ubuntu). 
-##### 1. Download File Instalasi
+### Langkah instalasi dalam CLI (Ubuntu). 
+#### 1. Download File Instalasi
 - Buka aplikasi terminal dan gunakan *superuser* <br>
   `sudo su` kemudian ketikan password (jika menggunakan password)
 - Berpindah ke directory `/var/www`, jika folder tidak ada, ketikan perintah `mkdir /var/www` <br>
@@ -44,7 +44,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 - Set *permission* dari directory **polr** yang telah diclone
   `chmod -R 755 polr`
   
-##### 2. Menginstall `composer` dependencies
+#### 2. Menginstall `composer` dependencies
 - Masuk ke dalam directory `polr` <br>
   `cd /polr`
 - Mendownload `composer` package <br>
@@ -52,43 +52,47 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 - Install dependencies ke aplikasi **polr** <br>
   `php composer.phar install --no-dev -o`
   <br>
-  Jika **composer** gagal untuk menginstall dependencies dikarenakan versi **PHP** yang berbeda,<br>
-  hapus file `composer.lock`, dan install **composer** kembali <br>
+  Jika **composer** gagal untuk menginstall dependencies dikarenakan versi **PHP** yang berbeda, hapus file `composer.lock`, dan install **composer** kembali <br>
   `rm composer.lock` <br>
   `php composer.phar install --no-dev -o`
 
-##### 3. Menjalankan Polr
+#### 3. Menjalankan Polr
 Untuk menjalankan **Polr** di Apache, harus membuat file konfigurasi apache baru di folder dalam sistem operasi konfigurasi Apache (contoh `/etc/apache2/sites-enabled` atau `/etc/httpd/sites-enabled`) atau tambahkan virtual host dalam file `httpd-vhosts.conf` seperti:
 
-Ganti `example.com` dengan alamat server eksternal dan restart Apache ketika selesai.
+- Ganti `example.com` dengan alamat server eksternal dan restart Apache ketika selesai.
 
-    <VirtualHost *:80>
-        ServerName example.com
-        ServerAlias example.com
+      <VirtualHost *:80>
+          ServerName example.com
+          ServerAlias example.com
 
-        DocumentRoot "/var/www/polr/public"
-        <Directory "/var/www/polr/public">
-            Require all granted
-            Options Indexes FollowSymLinks
-            AllowOverride All
-            Order allow,deny
-            Allow from all
-        </Directory>
-    </VirtualHost>
+          DocumentRoot "/var/www/polr/public"
+          <Directory "/var/www/polr/public">
+              Require all granted
+              Options Indexes FollowSymLinks
+              AllowOverride All
+              Order allow,deny
+              Allow from all
+          </Directory>
+      </VirtualHost>
+
+- Jika `mod_rewrite` belum berjalan, maka jalankan perintah:
+`a2enmod rewrite` <br>
+- Restart Apache
+`sudo service apache2 restart`
 
 
 ## Cara Pemakaian (Mufti amin)
-#### Tampilan Aplikasi Web
+### Tampilan Aplikasi Web
 ![1](https://user-images.githubusercontent.com/48195354/111268258-9f721100-865f-11eb-9e79-d09a03f3d33f.jpeg)
 ![2](https://user-images.githubusercontent.com/48195354/111268282-a731b580-865f-11eb-8857-8f8fbe4e5d45.jpeg)
 ![3](https://user-images.githubusercontent.com/48195354/111268287-a9940f80-865f-11eb-995b-12be3d671281.jpeg)
 ![4](https://user-images.githubusercontent.com/48195354/111268291-aac53c80-865f-11eb-9de9-e47b1b341045.jpeg)
 ![5](https://user-images.githubusercontent.com/48195354/111268295-abf66980-865f-11eb-9def-179c25e34216.jpeg)
 ![6](https://user-images.githubusercontent.com/48195354/111268298-ac8f0000-865f-11eb-9f0c-28a897391d99.jpeg)
-#### Fungsi-fungsi utama
+### Fungsi-fungsi utama
 ![7](https://user-images.githubusercontent.com/48195354/111268299-adc02d00-865f-11eb-831c-001a714a5d38.jpeg)
 ![WhatsApp Image 2021-03-15 at 10 03 47 PM](https://user-images.githubusercontent.com/48195354/111268300-adc02d00-865f-11eb-9c44-c1a51b677893.jpeg)
-#### Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
+### Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
 
 ## Pembahasan (Abdan)
