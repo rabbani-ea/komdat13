@@ -16,7 +16,7 @@ https://polrproject.org/
 
 ## Sekilas Tentang (Bani)
 
-Deskripsi singkat tentang aplikasi tsb.
+Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, dan memberikan pengguna kemudahan untuk mengubah tautan panjang menjadi lebih pendek dan memudahkan user untuk mencantumkan brand sehingga tautan tersebut lebih mudah diingat dan diakses. Aplikasi ini sangat mudah digunakan dengan tampilan yan gminimalis dan modern, sehingga tidak perlu banyak waktu bagi pengguna untuk bisa mempelajari ataupun menggunakan aplikasi ini.
 
 
 ## Instalasi (amin Mufti)
