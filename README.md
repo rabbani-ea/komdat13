@@ -9,7 +9,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 ## Instalasi (amin Mufti)
 
 #### Prasyarat, apa saja yang harus diinstal sebelumnya
-  - Apache, nginx, IIS, or lighttpd (Apache preferred) <br>
+  - Apache <br>
     `sudo apt install apache2`
   - PHP >= 5.5.9 <br>
     `sudo apt install php`
@@ -56,6 +56,18 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
   hapus file `composer.lock`, dan install **composer** kembali <br>
   `rm composer.lock` <br>
   `php composer.phar install --no-dev -o`
+
+##### 3. Menjalankan Polr
+Untuk menjalankan **Polr** di Apache, harus membuat file konfigurasi apache baru di folder dalam sistem operasi konfigurasi Apache (contoh `/etc/apache2/sites-enabled` atau `/etc/httpd/sites-enabled`) atau tambahkan virtual host dalam file `httpd-vhosts.conf` seperti:
+
+Ganti `example.com` dengan alamat server eksternal dan restart Apache ketika selesai.
+
+---
+**NOTE**
+
+It works with almost all markdown flavours (the below blank line matters).
+
+---
 
 
 
