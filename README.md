@@ -44,6 +44,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 ## Pembahasan (abdan)
 
 **Polr** --  Modern, minimalist, modular, and lightweight URL shortener.-- ditulis menggunakan bahasa ditulis dalam bahasa pemrograman PHP yang support untuk penggunaan MySQL. Sebagai salah satu CMS yang paling banyak digunakan di dunia, aplikasi ini menawarkan berbagai kelebihan, diantaranya :
+
     - Open source
     - Tampilan antarmuka yang Modern dan simple interface untuk memanage link dan instansinya
     - _Intrepid_, dalam artian lain, mudah digunakan
@@ -53,6 +54,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
     - Dapat digunakan sebagai [extensi browser](https://github.com/cleverdevil/Polr.safariextension) pada safari.
  
 Tentu saja, sebuah aplikasi pasti memiliki kekurangan. Kekurangan yang dimiliki **Polr** antara lain :
+
     - Penggunaan **Polr** harus membutuhkan instalasi cia web app, tentu hal tersebut tidak sesimple menggunakan url shortener sejenis seperti bit.ly atupun ipblink
     - ssss
     - sss
