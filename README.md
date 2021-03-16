@@ -28,7 +28,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
 
-## Pembahasan (abdan)
+## Pembahasan (Abdan)
 
 **Polr** --  Modern, minimalist, modular, and lightweight URL shortener.-- ditulis menggunakan bahasa ditulis dalam bahasa pemrograman PHP yang support untuk penggunaan MySQL. Sebagai salah satu CMS yang paling banyak digunakan di dunia, aplikasi ini menawarkan berbagai kelebihan, diantaranya :
 - Open source
