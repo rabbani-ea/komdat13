@@ -75,9 +75,9 @@ Untuk menjalankan **Polr** di Apache, harus membuat file konfigurasi apache baru
           </Directory>
       </VirtualHost>
 
-- Jika `mod_rewrite` belum berjalan, maka jalankan perintah:
+- Jika `mod_rewrite` belum berjalan, maka jalankan perintah: <br>
 `a2enmod rewrite` <br>
-- Restart Apache
+- Restart Apache <br>
 `sudo service apache2 restart`
 
 
