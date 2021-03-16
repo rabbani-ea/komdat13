@@ -14,7 +14,7 @@ Anggota :
 # Aplikasi Web "Polr"
 https://polrproject.org/
 
-## Sekilas Tentang (Bani)
+## Sekilas Tentang Polr (Bani)
 
 Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, dan memberikan pengguna kemudahan untuk mengubah tautan panjang menjadi lebih pendek dan memudahkan user untuk mencantumkan brand sehingga tautan tersebut lebih mudah diingat dan diakses. Aplikasi ini sangat mudah digunakan dengan tampilan yan gminimalis dan modern, sehingga tidak perlu banyak waktu bagi pengguna untuk bisa mempelajari ataupun menggunakan aplikasi ini.
 
@@ -43,6 +43,8 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 
 ## Pembahasan (abdan)
 
+Polr --  Modern, minimalist, modular, and lightweight URL shortener.-- ditulis menggunakan bahasa ditulis dalam bahasa pemrograman PHP yang support untuk penggunaan MySQL. Sebagai salah satu CMS yang paling banyak digunakan di dunia, aplikasi ini menawarkan berbagai kelebihan, diantaranya :
+
 - Pendapat anda tentang aplikasi web ini
     - kelebihan
     - kekurangan
@@ -51,4 +53,5 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 
 ## Referensi
 
-Cantumkan tiap sumber informasi yang anda pakai.
+1. [About Polr](https://polrproject.org) - PrestaShop
+2. [How to install Polr]( ) - 
