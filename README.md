@@ -8,7 +8,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 
 ## Instalasi (amin Mufti)
 
-- Prasyarat, apa saja yang harus diinstal sebelumnya. <br>
+#### Prasyarat, apa saja yang harus diinstal sebelumnya
   - Apache, nginx, IIS, or lighttpd (Apache preferred)
   - PHP >= 5.5.9
   - MariaDB or MySQL >= 5.5, SQLite alternatively
@@ -21,7 +21,28 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
     - Tokenizer PHP Extension
     - JSON PHP Extension
     - PHP curl extension
-- Langkah instalasi dalam CLI.
+
+#### Langkah instalasi dalam CLI (Ubuntu). 
+##### 1. Download File Instalasi
+- Buka aplikasi terminal dan gunakan *superuser* <br>
+  `sudo su` kemudian ketikan password (jika menggunakan password)
+- Berpindah ke directory `/var/www`, jika folder tidak ada, ketikan perintah `mkdir /var/www` <br>
+  `cd /var/www`
+- Clone (download) aplikasi Polr dengan menggunakan **git** <br>
+  `git clone https://github.com/cydrobolt/polr.git --depth=1`
+- Set *permission* dari directory **polr** yang telah diclone
+  `chmod -R 755 polr`
+  
+##### 2. Menginstall `composer` dependencies
+- Mendownload `composer` package <br>
+  `curl -sS https://getcomposer.org/installer | php`
+- Install dependencies ke aplikasi **polr** <br>
+  `php composer.phar install --no-dev -o`
+  <br>
+  Jika **composer** gagal untuk menginstall dependencies dikarenakan versi **PHP** yang berbeda,<br>
+  hapus file `composer.lock`, dan install **composer** kembali <br>
+  `rm composer.lock` <br>
+  `php composer.phar install --no-dev -o`
 
 
 
