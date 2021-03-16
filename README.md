@@ -19,11 +19,11 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
     `sudo apt install composer`
   - PHP requirements:
     - OpenSSL PHP Extension <br>
-      `sudo apt install php-openssl`
+      `sudo apt install openssl`
     - PDO PHP Extension <br>
       `sudo apt install php-pdo`
     - PDO MySQL Driver (php5-mysql on Debian & Ubuntu, php5x-pdo_mysql on FreeBSD) <br>
-      `sudo apt install php5-mysql`
+      `sudo apt install php5-mysql` (jika tidak bisa, lewatkan)
     - Mbstring PHP Extension <br>
       `sudo apt install php-mbstring`
     - Tokenizer PHP Extension <br>
@@ -31,7 +31,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
     - JSON PHP Extension <br>
       `sudo apt install php-json`
     - PHP curl extension <br>
-      `sudo apt isntall php-curl`
+      `sudo apt install php-curl`
 
 ### Langkah instalasi dalam CLI (Ubuntu). 
 #### 1. Download File Instalasi
