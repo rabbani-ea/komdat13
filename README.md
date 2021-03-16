@@ -61,15 +61,21 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 Untuk menjalankan **Polr** di Apache, harus membuat file konfigurasi apache baru di folder dalam sistem operasi konfigurasi Apache (contoh `/etc/apache2/sites-enabled` atau `/etc/httpd/sites-enabled`) atau tambahkan virtual host dalam file `httpd-vhosts.conf` seperti:
 
 Ganti `example.com` dengan alamat server eksternal dan restart Apache ketika selesai.
+--
+<VirtualHost *:80>
+    ServerName example.com
+    ServerAlias example.com
 
----
-**NOTE**
-
-It works with almost all markdown flavours (the below blank line matters).
-
----
-
-
+    DocumentRoot "/var/www/polr/public"
+    <Directory "/var/www/polr/public">
+        Require all granted
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
+--
 
 ## Cara Pemakaian (Mufti amin)
 #### Tampilan Aplikasi Web
