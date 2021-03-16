@@ -9,28 +9,28 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 ## Instalasi (amin Mufti)
 
 #### Prasyarat, apa saja yang harus diinstal sebelumnya
-  - Apache, nginx, IIS, or lighttpd (Apache preferred)
+  - Apache, nginx, IIS, or lighttpd (Apache preferred) <br>
     `sudo apt install apache2`
-  - PHP >= 5.5.9
+  - PHP >= 5.5.9 <br>
     `sudo apt install php`
-  - MariaDB or MySQL >= 5.5, SQLite alternatively
+  - MariaDB or MySQL >= 5.5, SQLite alternatively <br>
     `sudo apt install php-mysql`
-  - composer
+  - composer <br>
     `sudo apt install composer`
   - PHP requirements:
-    - OpenSSL PHP Extension
+    - OpenSSL PHP Extension <br>
       `sudo apt install php-openssl`
-    - PDO PHP Extension
+    - PDO PHP Extension <br>
       `sudo apt install php-pdo`
-    - PDO MySQL Driver (php5-mysql on Debian & Ubuntu, php5x-pdo_mysql on FreeBSD)
+    - PDO MySQL Driver (php5-mysql on Debian & Ubuntu, php5x-pdo_mysql on FreeBSD) <br>
       `sudo apt install php5-mysql`
-    - Mbstring PHP Extension
+    - Mbstring PHP Extension <br>
       `sudo apt install php-mbstring`
-    - Tokenizer PHP Extension
+    - Tokenizer PHP Extension <br>
       `sudo apt install php-tokenizer`
-    - JSON PHP Extension
+    - JSON PHP Extension <br>
       `sudo apt install php-json`
-    - PHP curl extension
+    - PHP curl extension <br>
       `sudo apt isntall php-curl`
 
 #### Langkah instalasi dalam CLI (Ubuntu). 
