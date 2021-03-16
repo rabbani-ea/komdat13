@@ -10,17 +10,28 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 
 #### Prasyarat, apa saja yang harus diinstal sebelumnya
   - Apache, nginx, IIS, or lighttpd (Apache preferred)
+    `sudo apt install apache2`
   - PHP >= 5.5.9
+    `sudo apt install php`
   - MariaDB or MySQL >= 5.5, SQLite alternatively
+    `sudo apt install php-mysql`
   - composer
+    `sudo apt install composer`
   - PHP requirements:
     - OpenSSL PHP Extension
+      `sudo apt install php-openssl`
     - PDO PHP Extension
+      `sudo apt install php-pdo`
     - PDO MySQL Driver (php5-mysql on Debian & Ubuntu, php5x-pdo_mysql on FreeBSD)
+      `sudo apt install php5-mysql`
     - Mbstring PHP Extension
+      `sudo apt install php-mbstring`
     - Tokenizer PHP Extension
+      `sudo apt install php-tokenizer`
     - JSON PHP Extension
+      `sudo apt install php-json`
     - PHP curl extension
+      `sudo apt isntall php-curl`
 
 #### Langkah instalasi dalam CLI (Ubuntu). 
 ##### 1. Download File Instalasi
@@ -34,6 +45,8 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
   `chmod -R 755 polr`
   
 ##### 2. Menginstall `composer` dependencies
+- Masuk ke dalam directory `polr` <br>
+  `cd /polr`
 - Mendownload `composer` package <br>
   `curl -sS https://getcomposer.org/installer | php`
 - Install dependencies ke aplikasi **polr** <br>
