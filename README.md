@@ -14,7 +14,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
   - PHP >= 5.5.9 <br>
     `sudo apt install php`
   - MariaDB or MySQL >= 5.5, SQLite alternatively <br>
-    `sudo apt install php-mysql`
+    `sudo apt install mysql-client`
   - composer <br>
     `sudo apt install composer`
   - PHP requirements:
@@ -90,6 +90,7 @@ Untuk menjalankan **Polr** di Apache, harus membuat file konfigurasi apache baru
 ![5](https://user-images.githubusercontent.com/48195354/111268295-abf66980-865f-11eb-9def-179c25e34216.jpeg)
 ![6](https://user-images.githubusercontent.com/48195354/111268298-ac8f0000-865f-11eb-9f0c-28a897391d99.jpeg)
 ### Fungsi-fungsi utama
+- Fungsi aplikasi ini adalah untuk memperpendek link (URL shortener)
 ![7](https://user-images.githubusercontent.com/48195354/111268299-adc02d00-865f-11eb-831c-001a714a5d38.jpeg)
 ![WhatsApp Image 2021-03-15 at 10 03 47 PM](https://user-images.githubusercontent.com/48195354/111268300-adc02d00-865f-11eb-9c44-c1a51b677893.jpeg)
 ### Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
