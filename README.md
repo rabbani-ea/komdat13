@@ -44,20 +44,18 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 ## Pembahasan (abdan)
 
 **Polr** --  Modern, minimalist, modular, and lightweight URL shortener.-- ditulis menggunakan bahasa ditulis dalam bahasa pemrograman PHP yang support untuk penggunaan MySQL. Sebagai salah satu CMS yang paling banyak digunakan di dunia, aplikasi ini menawarkan berbagai kelebihan, diantaranya :
-
-    - Open source
-    - Tampilan antarmuka yang Modern dan simple interface untuk memanage link dan instansinya
-    - _Intrepid_, dalam artian lain, mudah digunakan
-    - Run on your own domain to adjust your branding to perfection
-    - Menggunakan Semantic REST API, sehingga dapat diintegrasikan dengan layanan yang lain _(Other services)_
-    - Proses [Instalasi](https://docs.polrproject.org/en/latest/user-guide/installation/) yang cukup mudah untuk developer
-    - Dapat digunakan sebagai [extensi browser](https://github.com/cleverdevil/Polr.safariextension) pada safari.
+- Open source
+- Tampilan antarmuka yang Modern dan simple interface untuk memanage link dan instansinya
+- _Intrepid_, dalam artian lain, mudah digunakan
+- Run on your own domain to adjust your branding to perfection
+- Menggunakan Semantic REST API, sehingga dapat diintegrasikan dengan layanan yang lain _(Other services)_
+- Proses [Instalasi](https://docs.polrproject.org/en/latest/user-guide/installation/) yang cukup mudah untuk developer
+- Dapat digunakan sebagai [extensi browser](https://github.com/cleverdevil/Polr.safariextension) pada safari.
  
 Tentu saja, sebuah aplikasi pasti memiliki kekurangan. Kekurangan yang dimiliki **Polr** antara lain :
-
-    - Penggunaan **Polr** harus membutuhkan instalasi cia web app, tentu hal tersebut tidak sesimple menggunakan url shortener sejenis seperti bit.ly atupun ipblink
-    - ssss
-    - sss
+- Penggunaan **Polr** harus membutuhkan instalasi cia web app, tentu hal tersebut tidak sesimple menggunakan url shortener sejenis seperti bit.ly atupun ipblink
+- ssss
+- sss
     
     
 ## Referensi
