@@ -8,7 +8,19 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 
 ## Instalasi (amin Mufti)
 
-- Prasyarat, apa saja yang harus diinstal sebelumnya.
+- Prasyarat, apa saja yang harus diinstal sebelumnya. <br>
+  - Apache, nginx, IIS, or lighttpd (Apache preferred)
+  - PHP >= 5.5.9
+  - MariaDB or MySQL >= 5.5, SQLite alternatively
+  - composer
+  - PHP requirements:
+    - OpenSSL PHP Extension
+    - PDO PHP Extension
+    - PDO MySQL Driver (php5-mysql on Debian & Ubuntu, php5x-pdo_mysql on FreeBSD)
+    - Mbstring PHP Extension
+    - Tokenizer PHP Extension
+    - JSON PHP Extension
+    - PHP curl extension
 - Langkah instalasi dalam CLI.
 
 
