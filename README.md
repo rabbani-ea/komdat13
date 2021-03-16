@@ -53,9 +53,14 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 - Dapat digunakan sebagai [extensi browser](https://github.com/cleverdevil/Polr.safariextension) pada safari.
  
 Tentu saja, sebuah aplikasi pasti memiliki kekurangan. Kekurangan yang dimiliki **Polr** antara lain :
-- Penggunaan **Polr** harus membutuhkan instalasi cia web app, tentu hal tersebut tidak sesimple menggunakan url shortener sejenis seperti bit.ly atupun ipblink
-- ssss
+- Penggunaan **Polr** harus membutuhkan instalasi via web app, tentu hal tersebut tidak sesimple menggunakan url shortener sejenis 
+- Dalam beberapa kasus, seringkali ditemukan bug yang terjadi saat menggunakan polr
 - sss
+
+Jika dibandingkan dengan aplikasi sejenis, seperti [bit.ly](bitly.com), kami dapat memberikan gambaran sebagai berikut
+- s
+- s
+- 
     
     
 ## Referensi
