@@ -85,6 +85,8 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 - Restart Apache <br>
  `systemctl restart apache2.service`
 
+### Buat Database
+`CREATE DATABASE polrdatabasename;`
 
 ## Cara Pemakaian
 ### Tampilan Aplikasi Web
