@@ -57,7 +57,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
   `php composer.phar install --no-dev -o`
 
 #### 3. Menjalankan Polr
-Untuk menjalankan **Polr** di Apache, harus membuat file konfigurasi apache baru di folder dalam sistem operasi konfigurasi Apache (contoh `/etc/apache2/sites-enabled` atau `/etc/httpd/sites-enabled`) atau tambahkan virtual host dalam file `httpd-vhosts.conf` seperti:
+Untuk menjalankan **Polr** di Apache, harus membuat file `polr-vhosts.conf` konfigurasi apache baru di folder dalam sistem operasi konfigurasi Apache (contoh `/etc/apache2/sites-enabled`) dan tambahkan virtual host dalam file `polr-vhosts.conf` seperti:
 
 - Ganti `example.com` dengan alamat server eksternal dan restart Apache ketika selesai.
 
@@ -93,7 +93,6 @@ Untuk menjalankan **Polr** di Apache, harus membuat file konfigurasi apache baru
 - Fungsi aplikasi ini adalah untuk memperpendek link (URL shortener)
 ![7](https://user-images.githubusercontent.com/48195354/111268299-adc02d00-865f-11eb-831c-001a714a5d38.jpeg)
 ![WhatsApp Image 2021-03-15 at 10 03 47 PM](https://user-images.githubusercontent.com/48195354/111268300-adc02d00-865f-11eb-9c44-c1a51b677893.jpeg)
-### Data real dummy
 
 
 ## Pembahasan
