@@ -1,12 +1,12 @@
 # Aplikasi Web "Polr"
 <h1 align="center"><img src="https://camo.githubusercontent.com/5e2eb23b0fb9b832458552e0f0a74a137208a9bce0942aa752a58e9e861a5864/68747470733a2f2f692e696d6775722e636f6d2f636b49364754752e706e67"> </h1>
 
-## Sekilas Tentang Polr (Bani)
+## Sekilas Tentang Polr
 
 Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, dan memberikan pengguna kemudahan untuk mengubah tautan panjang menjadi lebih pendek dan memudahkan user untuk mencantumkan brand sehingga tautan tersebut lebih mudah diingat dan diakses. Aplikasi ini sangat mudah digunakan dengan tampilan yan gminimalis dan modern, sehingga tidak perlu banyak waktu bagi pengguna untuk bisa mempelajari ataupun menggunakan aplikasi ini.
 
 
-## Instalasi (amin Mufti)
+## Instalasi
 
 ### Prasyarat, apa saja yang harus diinstal sebelumnya
   - Apache <br>
@@ -14,7 +14,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
   - PHP >= 5.5.9 <br>
     `sudo apt install php`
   - MariaDB or MySQL >= 5.5, SQLite alternatively <br>
-    `sudo apt install mysql-client`
+    `sudo apt install mysql-server`
   - composer <br>
     `sudo apt install composer`
   - PHP requirements:
@@ -81,7 +81,7 @@ Untuk menjalankan **Polr** di Apache, harus membuat file konfigurasi apache baru
 `sudo service apache2 restart`
 
 
-## Cara Pemakaian (Mufti amin)
+## Cara Pemakaian
 ### Tampilan Aplikasi Web
 ![1](https://user-images.githubusercontent.com/48195354/111268258-9f721100-865f-11eb-9e79-d09a03f3d33f.jpeg)
 ![2](https://user-images.githubusercontent.com/48195354/111268282-a731b580-865f-11eb-8857-8f8fbe4e5d45.jpeg)
@@ -93,10 +93,10 @@ Untuk menjalankan **Polr** di Apache, harus membuat file konfigurasi apache baru
 - Fungsi aplikasi ini adalah untuk memperpendek link (URL shortener)
 ![7](https://user-images.githubusercontent.com/48195354/111268299-adc02d00-865f-11eb-831c-001a714a5d38.jpeg)
 ![WhatsApp Image 2021-03-15 at 10 03 47 PM](https://user-images.githubusercontent.com/48195354/111268300-adc02d00-865f-11eb-9c44-c1a51b677893.jpeg)
-### Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
+### Data real dummy
 
 
-## Pembahasan (Abdan)
+## Pembahasan
 
 **Polr** --  Modern, minimalist, modular, and lightweight URL shortener.-- ditulis menggunakan bahasa ditulis dalam bahasa pemrograman PHP yang support untuk penggunaan MySQL. Sebagai salah satu CMS yang paling banyak digunakan di dunia, aplikasi ini menawarkan berbagai kelebihan, diantaranya :
 - Open source
