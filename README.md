@@ -37,48 +37,53 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
 #### 1. Download File Instalasi
 - Buka aplikasi terminal dan gunakan *superuser* <br>
   `sudo su` kemudian ketikan password (jika menggunakan password)
-- Berpindah ke directory `/var/www`, jika folder tidak ada, ketikan perintah `mkdir /var/www` <br>
-  `cd /var/www`
+- Berpindah ke directory `/var/www/html`, jika folder tidak ada, ketikan perintah `mkdir /var/www/html` <br>
+  `cd /var/www/html`
 - Clone (download) aplikasi Polr dengan menggunakan **git** <br>
   `git clone https://github.com/cydrobolt/polr.git --depth=1`
-- Set *permission* dari directory **polr** yang telah diclone
-  `chmod -R 755 polr`
+- Pindahkan file yang diunduh ke root server web.
+  `mv ./polr/.[!.]* . && mv ./polr/* . && rm -rf polr`
+- Set *permission* dari directory
+  `chown -R www-data:www-data /var/www/html/`
+  `chmod -R 755 /var/www/html/`
   
 #### 2. Menginstall `composer` dependencies
-- Masuk ke dalam directory `polr` <br>
-  `cd /polr`
 - Mendownload `composer` package <br>
   `curl -sS https://getcomposer.org/installer | php`
 - Install dependencies ke aplikasi **polr** <br>
   `php composer.phar install --no-dev -o`
-  <br>
-  Jika **composer** gagal untuk menginstall dependencies dikarenakan versi **PHP** yang berbeda, hapus file `composer.lock`, dan install **composer** kembali <br>
-  `rm composer.lock` <br>
-  `php composer.phar install --no-dev -o`
+- Salin file konfigurasi yang disediakan untuk mengaktifkan penginstal berbasis web.
+  `cp .env.setup .env`
 
 #### 3. Menjalankan Polr
-Untuk menjalankan **Polr** di Apache, harus membuat file `polr-vhosts.conf` konfigurasi apache baru di folder dalam sistem operasi konfigurasi Apache (contoh `/etc/apache2/sites-enabled`) dan tambahkan virtual host dalam file `polr-vhosts.conf` seperti:
-
+- Nonaktifkan konfigurasi situs Apache default.
+  `a2dissite 000-default.conf`
+- Buat file konfigurasi Apache baru untuk instalasi Polr.
+  `nano /etc/apache2/sites-available/polr.conf`
+- Pastekan ke dalam editor .conf
 - Ganti `example.com` dengan alamat server eksternal dan restart Apache ketika selesai.
 
       <VirtualHost *:80>
           ServerName example.com
           ServerAlias example.com
-
-          DocumentRoot "/var/www/polr/public"
-          <Directory "/var/www/polr/public">
+          DocumentRoot "/var/www/html/public"
+          <Directory "/var/www/html/public">
               Require all granted
               Options Indexes FollowSymLinks
               AllowOverride All
               Order allow,deny
               Allow from all
           </Directory>
+         ErrorLog ${APACHE_LOG_DIR}/error.log
+         CustomLog ${APACHE_LOG_DIR}/access.log combined
       </VirtualHost>
 
+- Aktifkan konfigurasi <br>
+ `a2ensite polr.conf`
 - Jika `mod_rewrite` belum berjalan, maka jalankan perintah: <br>
-`a2enmod rewrite` <br>
+ `a2enmod rewrite` 
 - Restart Apache <br>
-`sudo service apache2 restart`
+ `systemctl restart apache2.service`
 
 
 ## Cara Pemakaian
