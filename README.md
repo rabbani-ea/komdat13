@@ -41,10 +41,10 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
   `cd /var/www/html`
 - Clone (download) aplikasi Polr dengan menggunakan **git** <br>
   `git clone https://github.com/cydrobolt/polr.git --depth=1`
-- Pindahkan file yang diunduh ke root server web.
+- Pindahkan file yang diunduh ke root server web. <br>
   `mv ./polr/.[!.]* . && mv ./polr/* . && rm -rf polr`
-- Set *permission* dari directory
-  `chown -R www-data:www-data /var/www/html/`
+- Set *permission* dari directory<br>
+  `chown -R www-data:www-data /var/www/html/` <br>
   `chmod -R 755 /var/www/html/`
   
 #### 2. Menginstall `composer` dependencies
@@ -52,15 +52,15 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
   `curl -sS https://getcomposer.org/installer | php`
 - Install dependencies ke aplikasi **polr** <br>
   `php composer.phar install --no-dev -o`
-- Salin file konfigurasi yang disediakan untuk mengaktifkan penginstal berbasis web.
+- Salin file konfigurasi yang disediakan untuk mengaktifkan penginstal berbasis web. <br>
   `cp .env.setup .env`
 
 #### 3. Menjalankan Polr
-- Nonaktifkan konfigurasi situs Apache default.
+- Nonaktifkan konfigurasi situs Apache default. <br>
   `a2dissite 000-default.conf`
-- Buat file konfigurasi Apache baru untuk instalasi Polr.
+- Buat file konfigurasi Apache baru untuk instalasi Polr. <br>
   `nano /etc/apache2/sites-available/polr.conf`
-- Pastekan ke dalam editor .conf
+
 - Ganti `example.com` dengan alamat server eksternal dan restart Apache ketika selesai.
 
       <VirtualHost *:80>
@@ -77,7 +77,7 @@ Aplikasi ini merupakan peringkas ataupun penyingkat sebuah tautan yang cepat, da
          ErrorLog ${APACHE_LOG_DIR}/error.log
          CustomLog ${APACHE_LOG_DIR}/access.log combined
       </VirtualHost>
-
+- Pastekan ke dalam editor .conf
 - Aktifkan konfigurasi <br>
  `a2ensite polr.conf`
 - Jika `mod_rewrite` belum berjalan, maka jalankan perintah: <br>
